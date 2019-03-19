@@ -1,0 +1,11 @@
+# PA4
+* Name : Wenlin Mao
+* Partner's Name: Zi Wang
+* edX edge username: w6mao
+* edX edge e-mail: w6mao@ucsd.edu
+* Any special comments, issues or points in grading or generally about the assignment you want to convey: We also finished the transformation part of the assignment. Additionally, since we used constant ambient as our color, scene 1 have grey instead of 
+red due to the amibient set in Scenen1. We also include the red version of the scene1 by changing the ambient to 1 0 0. 
+* Accomplishment and plan: We first established the entire system structure and separated abstractions such as Ray, Intersections into different classes. Then we start implement the camera algorithm. We wrote the readfile.cpp to read in data and create a Camera instance and bind it to a global variable.Then we implemented two primitives class: Sphere and Triangle. With
+polymorphism, we store the Primitive class which is the superclass of Sphere and Triangle in the Scene object and build the intersect method in both Sphere and Triangle class correspondingly. Thus, when raytracer
+calls Primitives' intersect method, it will run the correct intersect method based on the primitive type. 
+After that, we start to implement the mechanism of reading color in readfile.cpp. The readfile.cpp stores the color information and assign them to the primitive object. Since we are not required to implement the light and shader, I just used the ambient term as our color. We also implemented the transformation function. To do that we first read the transform command based on the write-up and store the transformation matrix in corresponding primitives. Then we apply transformation separately on Sphere and Triangle based on what the formula professor gave. For the next step, we will first implement the color function into Intersection's findColor method. And also implement the mechanism of reading light in readfile.cpp. Then we will refactor the code and start to implement the acceleration structure to increase our program's speed. If we have spare time, we will implement some other primitive structure for the extra credit. 
