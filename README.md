@@ -19,11 +19,7 @@ We use bounding volume hierarchy to accelerate the algorithm. First, we pack eac
 * Performance after add acceleration: <br>
 ![alt text](https://github.com/WenlinMao/Raytracer/blob/master/doc/performance.png?raw=true)
 
-* EC attempts:
-I tried with refraction and I think I get some of it to work. However, I don't really find a good way to test it completely. Here are several examples I tried by modifiying the original Scene 6. 
-
-Transparent Ball on Left <br>
-![alt text](https://github.com/WenlinMao/Raytracer/blob/master/result/scene6_left_test.png?raw=true)
-
-Transparent Ball on Right <br>
-![alt text](https://github.com/WenlinMao/Raytracer/blob/master/result/scene6_right_test.png?raw=true)
+* Sample Scenes Rendered By Raytracer
+![alt text](https://github.com/WenlinMao/Raytracer/blob/master/result/scene5.png)
+![alt text](https://github.com/WenlinMao/Raytracer/blob/master/result/scene6.png)
+![alt text](https://github.com/WenlinMao/Raytracer/blob/master/result/scene7.png)
