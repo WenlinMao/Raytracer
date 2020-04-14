@@ -1,7 +1,7 @@
 #Cornell Box
 size 640 480
 camera 0 0 1 0 0 -1 0 1 0 45
-output scene6_left_test.png
+output refraction.png
 
 maxdepth 5
 
@@ -46,7 +46,7 @@ pushTransform
 translate 0 0 -3
 rotate 0 1 0 60
 scale 10 10 1
-diffuse 1 0 0
+diffuse 1 1 1
 tri 0 1 2
 tri 0 2 3
 popTransform
@@ -56,7 +56,7 @@ pushTransform
 translate 0 0 -3
 rotate 0 1 0 -60
 scale 10 10 1
-diffuse 0 1 0
+diffuse 1 1 1
 tri 0 1 2
 tri 0 2 3
 popTransform
@@ -87,21 +87,30 @@ translate 0 -0.5 0
 rotate 1 0 0 -60
 translate 0 0 -1
 scale 10 10 1
-diffuse 1 1 1
+diffuse 1 0 0
 tri 0 1 2
 tri 0 2 3
 popTransform
 
 refraction 1.51
-#sphere
-diffuse 0 0 0 
+#sphere3
+diffuse 0.0 0.0 0.0
+specular 0.2 0.2 0.2
 pushTransform
-translate -0.75 -0.5 -1
+translate 0 -0.35 -1
 scale 0.1 0.1 0.1
-sphere 5 5 -3 2
+sphere 0 0 0 1
 popTransform
-
 refraction 0
+
+#sphere4
+diffuse 0.7 0.5 0.2
+specular 0.2 0.2 0.2
+pushTransform
+translate 0.5 -0.5 -2
+scale 0.3 0.6 0.3
+sphere 0 0 0 1
+popTransform
 
 
 popTransform

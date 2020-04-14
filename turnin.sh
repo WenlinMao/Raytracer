@@ -15,4 +15,4 @@ bin/raytracer test/scene7.test
 
 rm -f result/*.zip
 
-zip -r result/hw3.zip result/scene4-ambient.png result/scene4-diffuse.png result/scene4-specular.png result/scene4-emission.png result/scene5.png result/scene6.png result/scene7.png
+zip -r result/homework1.zip result/scene4-ambient.png result/scene4-diffuse.png result/scene4-specular.png result/scene4-emission.png result/scene5.png result/scene6.png result/scene7.png
